@@ -1,0 +1,11 @@
+<section>   
+  <h2>Game of Thrones Quotes</h2>
+  <button (click)="fetchGOTData()">More quotes</button>  
+  <ul>
+  @for (post of data; track post.id) {
+    <li>{{post.sentence}} - {{post.character.name}}</li>  
+  }
+  </ul>
+  
+  </section>
+
