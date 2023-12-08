@@ -1,12 +1,10 @@
 section {
   max-width: 500px;
   margin: 0 auto;
-  padding-top: 20px;
-  font-size: 14px;
+  padding-top: 4 rem;
+  font-size: 18px;
 }
 
 .name {
   cursor: pointer;
 }
-
-

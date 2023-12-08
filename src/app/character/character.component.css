@@ -1,0 +1,16 @@
+section {
+  max-width: 500px;
+  margin: 0 auto;
+  padding-top: 20px;
+  font-size: 14px;
+}
+
+.name {
+  cursor: pointer;
+  font-size: medium;
+}
+
+.quote {
+  font-size: 32px;
+  font-style: italic;
+}

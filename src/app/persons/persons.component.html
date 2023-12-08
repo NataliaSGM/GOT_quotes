@@ -1,25 +1,28 @@
 <section>   
   <h2>Game of Thrones Characters</h2>
   <form (ngSubmit)="search()">
-    <input type="search" [(ngModel)]="searchCharacter" name="searchCharacter" placeholder="Search" aria-label="Search">
-    <button class="btn btn-outline-success" type="submit">Search Character</button>
-  </form> 
-  <button (click)="displayAll()">Display All</button> 
+    <input type="search" [(ngModel)]="searchCharacter" name="searchCharacter" placeholder="Search Character" aria-label="Search">
+    <button class="btn btn-secondary btn-sm m-2" type="submit">Search</button>
+  </form>    
   @if(characterNotFound){
     <p>Character not found</p>
+  } @else {
+    
+    <ul>
+      @for (character of characters; track character.id) {
+        <div class="name">
+        @if (character.house) {
+          <div (click)="getDetails(character.slug)">{{character.name}} of {{character.house.name}}     
+          </div>     
+        } @else {
+          <div (click)="getDetails(character.slug)">{{character.name}}</div> 
+        }
+      </div>
+      }
+      </ul>
   }
-  <ul>
-  @for (character of characters; track character.id) {
-    <div class="name">
-    @if (character.house) {
-      <div (click)="getDetails(character.slug)">{{character.name}} of {{character.house.name}}     
-      </div>     
-    } @else {
-      <div (click)="getDetails(character.slug)">{{character.name}}</div> 
-    }
-  </div>
-  }
-  </ul>
+  
+  <button class="btn btn-secondary btn-sm m-2" (click)="displayAll()">Display All</button>
   </section>
 
   <div class="container p-5">

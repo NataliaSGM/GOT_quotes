@@ -36,7 +36,8 @@ export class PersonsComponent implements OnInit {
           this.characterNotFound = true;
         } else {
           this.characterNotFound = false;
-          this.characters = [data]; 
+          this.characters = [data[0]]; 
+          console.log(this.characters);
         }
       });
   }

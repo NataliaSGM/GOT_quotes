@@ -1,28 +1,20 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <div class="container-fluid">
-    <h1 class="navbar-brand">Quotes</h1>    
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" routerLink="/">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" routerLink="/houses">Houses</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" routerLink="/persons">Characters</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" routerLink="/quotes">Quotes</a>
-        </li>
-      </ul>
-      <!-- <form class="d-flex">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form> -->
-    </div>
-  </div>
-</nav>
+<ul class="nav nav-tabs">
+    <li class="nav-item">
+      <a class="nav-link"  routerLink="/" routerLinkActive="active">GOT quotes?</a>
+    </li>      
+    <li class="nav-item">
+      <a class="nav-link"  routerLink="/houses" routerLinkActive="active">Houses</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link"  routerLink="/persons" routerLinkActive="active">Characters</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link"  routerLink="/quotes" routerLinkActive="active">Quotes</a>
+    </li>      
+</ul>
+
+
+
 <div class="container p-5">
   <router-outlet></router-outlet>
 </div>

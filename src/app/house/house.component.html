@@ -1,0 +1,15 @@
+<section>
+  
+    <h2>{{ house?.name}}</h2>
+
+    @for (member of house?.members; track member.id) {
+      <div class="name">
+        <p class="m-4" (click)="getDetails(member.slug)">{{member.name}}</p> 
+      </div>
+      
+    }
+
+    <button type="button" class="btn btn-secondary" mdbRipple (click)="goBack()">Back</button>
+  
+  
+</section>
