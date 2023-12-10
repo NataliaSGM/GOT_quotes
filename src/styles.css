@@ -15,7 +15,8 @@ body{
   height: 100vh;  
 }
 
-.container{
+.container
+{
   position: relative;
 }
 
