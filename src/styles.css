@@ -4,10 +4,51 @@ h1, h2 {
     font: 500 20px/32px Roboto, 'Fjalla One', sans-serif !important
   }
   
-:root {
-    --vh: 100vh;   
+/* :root {
+       
+} */
+
+*{
+  margin: 0 ;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+body{ 
+  width: 100%;
+  height: 100vh;  
+}
 
+.container{
+  position: relative;
+}
 
+.snow{
+  position: relative;
+  display: flex;
+}
 
+.snow span{
+  position: relative;
+  width: 2px;
+  height: 3px;
+  background-color: grey;
+  margin: 0 15px;
+  border-radius: 50%;  
+  animation: animate 10s linear ;
+  animation-duration: calc(500s / var(--i));
+}
+
+.snow span:nth-child(even){
+  background-color: grey;  
+}
+
+@keyframes animate
+{
+  0% {
+    top: 0;
+  }
+  100% {
+    top: 100vh;
+  }
+}
