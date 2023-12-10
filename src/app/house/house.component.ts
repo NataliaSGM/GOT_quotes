@@ -25,8 +25,7 @@ export class HouseComponent {
   getHouseDetails(name: string): void {
     this.httpClient.get(`https://api.gameofthronesquotes.xyz/v1/house/${name}`)
       .subscribe((data: any) => {
-        this.house = data[0];
-        console.log(data[0]);        
+        this.house = data[0];            
       });
   }
 

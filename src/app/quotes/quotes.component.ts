@@ -19,8 +19,7 @@ export class QuotesComponent implements OnInit {
 
   fetchGOTData() {
     this.httpClient.get('https://api.gameofthronesquotes.xyz/v1/random/5')
-    .subscribe((data: any) => {
-      console.log(data);
+    .subscribe((data: any) => {      
       this.data = data;
     });
   }
