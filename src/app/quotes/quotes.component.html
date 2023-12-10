@@ -1,13 +1,16 @@
-<div class="section"> 
+<section> 
   <div class="d-flex justify-content-between align-items-center"> 
     <h2>GOT Quotes!</h2>  
-    <button type="button" class="btn btn-secondary btn-sm" (click)="fetchGOTData()">More quotes</button>
+    <button type="button" class="btn btn-secondary btn-sm m-4" (click)="fetchGOTData()">More quotes</button>
   </div>
+
+  <div class="quotesSection">
   @for (post of data; track post.id) {
     <div class="m-4">
-    {{post.sentence}} - <span style="font-style: italic; font-weight: lighter">{{post.character.name}}</span> 
+    "{{post.sentence}}" - <span style="font-style: italic; font-weight: lighter">{{post.character.name}}</span> 
     </div> 
   }
+  </div>
 
-</div>
+</section>
 

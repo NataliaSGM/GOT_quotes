@@ -7,6 +7,10 @@
   font-size: 18px;
 }
 
+.container {
+  width: 100vw;
+  height: 100vh;
+}
 .title {
   position: absolute; 
   top: 50%; left: 35%; 
@@ -20,4 +24,13 @@
   transform: translate(-50%, -50%);
   font-size: 55px;
   font-family: 'Fjalla One', sans-serif;
+}
+
+.imgGOT {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 100%;
+  height: auto;
 }

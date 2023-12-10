@@ -1,8 +1,10 @@
 section {
-  max-width: 500px;
+  max-width: 600px;
+  min-height: 600px;  
   margin: 0 auto;
-  padding-top: 20px;
-  font-size: 14px;
+  padding: 4rem;
+  font-size: 18px;
+  justify-content: center;
 }
 
 .name {

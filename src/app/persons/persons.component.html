@@ -1,8 +1,8 @@
 <section>   
-  <h2>Game of Thrones Characters</h2>
+  <h1>Game of Thrones Characters</h1>
   <form (ngSubmit)="search()">
     <input type="search" [(ngModel)]="searchCharacter" name="searchCharacter" placeholder="Search Character" aria-label="Search">
-    <button class="btn btn-secondary btn-sm m-2" type="submit">Search</button>
+    <button class="btn btn-secondary btn-sm m-4" type="submit">Search</button>
   </form>    
   @if(characterNotFound){
     <p>Character not found</p>
@@ -22,9 +22,7 @@
       </ul>
   }
   
-  <button class="btn btn-secondary btn-sm m-2" (click)="displayAll()">Display All</button>
+  <button class="btn btn-secondary btn-sm mb-5" (click)="displayAll()">Display All</button>
   </section>
 
-  <div class="container p-5">
-    <router-outlet></router-outlet>
-  </div>
+<router-outlet></router-outlet>

@@ -1,18 +1,23 @@
 <section>
-  <div class="mx-auto" style="width: 600px; height: 250px;"> 
-    <h2 class="name">{{ character?.name}}</h2>
+  <div> 
+    <h2 class="name">{{ character?.name}}</h2> 
+  
     <p class="quote">"{{randomQuote}}"</p> 
-    
-  </div >
-    <button type="button" class="btn btn-secondary" style="margin-right: 1rem;" (click)="goBack()">
+
+    <div class="buttons">
+    </div >
+    <button type="button" class="btn btn-secondary btn-sm m-3" style="margin-right: 1rem;" (click)="goBack()">
       Back
    </button>
-
- 
+    
   @if(character.quotes.length > 1) {
-      <button type="button" class="btn btn-secondary" (click)="getRandomQuote()">
+      <button type="button" class="btn btn-secondary btn-sm" (click)="getRandomQuote()">
         Change quote
       </button>
-  } 
+    } 
+
+    </div>
+    
+ 
 
 </section>

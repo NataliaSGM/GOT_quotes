@@ -1,7 +1,16 @@
-section {
-  max-width: 500px;
+section {  
+  max-width: 600px;
   margin: 0 auto;
-  padding-top: 20px;
-  font-size: 14px;  
+  padding: 5rem;
+  font-size: 18px;
+  justify-content: center;
+  
 }
+
+.quotesSection {  
+  width: 600px;
+  height: 600px;
+}
+
+
 

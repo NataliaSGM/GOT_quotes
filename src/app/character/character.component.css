@@ -1,8 +1,10 @@
 section {
-  max-width: 500px;
+  max-width: 600px;
+  min-height: 700px;
   margin: 0 auto;
-  padding-top: 20px;
-  font-size: 14px;
+  padding: 5rem;
+  font-size: 18px;
+  justify-content: center;
 }
 
 .name {
@@ -11,6 +13,10 @@ section {
 }
 
 .quote {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-size: 32px;
   font-style: italic;
+  min-height: 300px;
 }
