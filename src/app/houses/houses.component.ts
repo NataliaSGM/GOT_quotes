@@ -22,15 +22,13 @@ export class HousesComponent implements OnInit {
 
   fetchGOTData() {
     this.httpClient.get('https://api.gameofthronesquotes.xyz/v1/houses')
-    .subscribe((data: any) => {
-      console.log(data);
+    .subscribe((data: any) => {      
       this.houses = data;
     });
   }
 
   getHouseDetails(slug: string): void {
-    this.router.navigate(['/house', slug]);
-    
+    this.router.navigate(['/house', slug]);    
   }
 
 
