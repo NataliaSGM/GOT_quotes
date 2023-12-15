@@ -1,16 +1,20 @@
 <nav>
   <ul class="nav nav-tabs">
     <li class="nav-item">
-      <a class="nav-link"  routerLink="/" routerLinkActive="active">GOT quotes?</a>
+      <a class="nav-link"  routerLink="/home" routerLinkActive="active" 
+      [routerLinkActiveOptions]="{exact: true}" ariaCurrentWhenActive="page">GOT quotes?</a>
     </li>      
     <li class="nav-item">
-      <a class="nav-link"  routerLink="/houses" routerLinkActive="active">Houses</a>
+      <a class="nav-link"  routerLink="/houses" routerLinkActive="active"
+      [routerLinkActiveOptions]="{exact: true}" ariaCurrentWhenActive="page">Houses</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link"  routerLink="/persons" routerLinkActive="active">Characters</a>
+      <a class="nav-link"  routerLink="/persons" routerLinkActive="active"
+      [routerLinkActiveOptions]="{exact: true}" ariaCurrentWhenActive="page">Characters</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link"  routerLink="/quotes" routerLinkActive="active">Quotes</a>
+      <a class="nav-link"  routerLink="/quotes" routerLinkActive="active"
+      [routerLinkActiveOptions]="{exact: true}" ariaCurrentWhenActive="page">Quotes</a>
     </li>      
 </ul>
 </nav>

@@ -5,25 +5,32 @@ import { QuotesComponent } from './quotes/quotes.component';
 import { CharacterComponent } from './character/character.component';
 import { HouseComponent } from './house/house.component';
 import { HomeComponent } from './home/home.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 export const routes: Routes = [   
   {
-    path: '', title: 'Home', component: HomeComponent
+    'path': 'home', 'title': 'Home', component: HomeComponent
   },
   {
-    path: 'houses', title: 'Houses', component:  HousesComponent
+    'path': 'houses', 'title': 'Houses', component:  HousesComponent
   },
   {
-    path: 'persons', title: 'Persons', component:  PersonsComponent
+    'path': 'persons', 'title': 'Persons', component:  PersonsComponent
   },
   {
-    path: 'character/:name', title: 'Character', component: CharacterComponent
+    'path': 'character/:name', 'title': 'Character', component: CharacterComponent
   }, 
   {
-    path: 'house/:name', title: 'House', component: HouseComponent
+    'path': 'house/:name', 'title': 'House', component: HouseComponent
   }, 
   {
-    path: 'quotes', title: 'Quotes', component:  QuotesComponent
+    'path': 'quotes', 'title': 'Quotes', component:  QuotesComponent
+  },
+  {
+    'path': '', redirectTo: '/home', pathMatch: 'full'
+  },
+  {
+    'path': '**', component:  PageNotFoundComponent
   }
   
 ];

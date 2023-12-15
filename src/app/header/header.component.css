@@ -2,3 +2,8 @@
   color: grey;
 }
 
+.active {
+  border-bottom: 2px solid;
+  transform: scale(1.1);
+  transition: border-bottom 0.3s, transform 0.3s;
+}
