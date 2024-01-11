@@ -1,4 +1,4 @@
-<section>   
+<div class="container-fluid">   
   <h1>Game of Thrones Characters</h1>
   <form (ngSubmit)="search()">
     <input type="search" [(ngModel)]="searchCharacter" name="searchCharacter" placeholder="Search Character" aria-label="Search">
@@ -23,6 +23,6 @@
   }
   
   <button class="btn btn-secondary btn-sm mb-5" (click)="displayAll()">Display All</button>
-  </section>
+  </div>
 
 <router-outlet></router-outlet>

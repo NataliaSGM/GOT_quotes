@@ -1,4 +1,4 @@
-section {
+.container-fluid {
   max-width: 600px;
   min-height: 700px;
   margin: 0 auto;
@@ -20,3 +20,12 @@ section {
   font-style: italic;
   min-height: 300px;
 }
+
+@media (max-width: 740px) {
+  .container-fluid{
+    padding: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
