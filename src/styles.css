@@ -15,37 +15,3 @@ body{
   height: 100vh;  
 }
 
-.container
-{
-  position: relative;
-}
-
-.snow{
-  position: relative;
-  display: flex;
-}
-
-.snow span{
-  position: relative;
-  width: 2px;
-  height: 3px;
-  background-color: grey;
-  margin: 0 15px;
-  border-radius: 50%;  
-  animation: animate 10s linear ;
-  animation-duration: calc(500s / var(--i));
-}
-
-.snow span:nth-child(even){
-  background-color: grey;  
-}
-
-@keyframes animate
-{
-  0% {
-    top: 0;
-  }
-  100% {
-    top: 100vh;
-  }
-}
