@@ -1,5 +1,5 @@
 .nav-link {
-  color: grey;
+  color: grey;  
 }
 
 .active {
@@ -11,5 +11,8 @@
 @media (max-width: 640px) {
   .navbar {
     flex-direction: column;
+  }
+  .nav-item{
+    font-size: small;
   }
 }
