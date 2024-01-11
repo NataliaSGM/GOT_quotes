@@ -1,12 +1,11 @@
 .container-fluid {
-  max-width: 600px;
-  margin: 0 auto;
+  max-width: 600px;  
   padding-top: 2rem;
   font-size: 18px;  
 }
 @media (max-width: 740px) {
   .container-fluid{
-    padding: 0;
+    padding: 1rem;
     width: 100%;
     height: 100%;
   }
